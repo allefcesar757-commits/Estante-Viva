@@ -6,76 +6,105 @@
     <title>Estande Livro</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <nav>
-        <h2>Estante Viva</h2>
-        <div class="inicio">
+    <h2>Estante Viva</h2>
+
+    <div class="inicio">
         <a href="">Catálogo</a>
-        <p>|</p>
-        <a href="">Cadastro</a> 
-        </div>
+        <span>|</span>
+        <a href="">Cadastro</a>
+    </div>
+
     </nav>
 
     <main>
-        <h1>Gerenciamento de livros</h1>
+    <h1>Gerenciamento de livros</h1>
 
-        <form>
-            <h5>Cadastrar livro</h5>
+    <form>
+        <h3>Cadastrar livro</h3>
+    <div class="tudo">
+        <div class="titulo-cadastro">
+        <label>Título *</label>
+        <input class="titulo"
+        type="text"
+        placeholder="Informe o título">
+        </div>
 
-            <label>Título *</label>
-            <input type="text" placeholder="Informe o título">
+        <div class="autor">
+        <label>Autor *</label>
+        <input type="text"
+        placeholder="Informe o autor">
+        </div>
 
-            <label>Autor *</label>
-            <input type="text" placeholder="Informe o autor">
+        <div class="cadastrar">
+        <label>Preço (R$) *</label>
+        <input type="text"
+        placeholder="0,00">
+        </div>
 
-            <label>Preço (R$) *</label>
-            <input type="text" placeholder="0,00">
+        <div class="estoque">
+        <label>Quantidade em estoque *</label>
+        <input type="text"
+        placeholder="0">
+        </div>
+        
+        <div>
+        <button class="cadastrar-button">Cadastrar livro</button>
+        </div>
 
-            <label>Quantidade em estoque *</label>
-            <input type="text" placeholder="0">
+    </div>
+    </form>
 
-            <button>Cadastrar livro</button>
-        </form>
+    <h4>Catálogo de livros</h4>
 
-        <h4>Catálogo de livros</h4>
+    <input class="buscar"
+    type="text"
+    placeholder="Buscar por parte do título">
 
-        <input type="text" placeholder="Buscar por parte do título">
+    <button>Buscar</button>
 
-        <button>Buscar</button>
-        <button>Limpar</button>
+    <button>Limpar</button>
 
-        <table>
-            <tr>
-                <th>Título</th>
-                <th>Autor</th>
-                <th>Preço</th>
-                <th>Estoque</th>
-                <th>Ações</th>
-            </tr>
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Preço</th>
+            <th>Estoque</th>
+            <th>Ações</th>
+        </tr>
 
-            <tr>
-                <td>Título cadastrado</td>
-                <td>Nome do autor</td>
-                <td>R$ 0,00</td>
-                <td>0</td>
-                <td><button>Editar</button></td>
-                <td><button>Excluir</button></td>
-            </tr>
+        <tr>
+            <td>Título cadastrado</td>
+            <td>Nome do autor</td>
+            <td>R$ 0,00</td>
+            <td>0</td>
+            <td><button>Editar</button></td>
+            <td><button>Excluir</button></td>
+        </tr>
 
-            <tr>
-                <td>Título cadastrado</td>
-                <td>Nome do autor</td>
-                <td>R$ 0,00</td>
-                <td>0</td>
-                <td><button>Editar</button></td>
-                <td><button>Excluir</button></td>
-            </tr>
-        </table>
+        <tr>
+            <td>Título cadastrado</td>
+            <td>Nome do autor</td>
+            <td>R$ 0,00</td>
+            <td>0</td>
+            <td><button>Editar</button></td>
+            <td><button>Excluir</button></td>
+        </tr>
+    </table>
 
-        <br>
+    <br>
+
     </main>
 
-    <footer>Estante Viva - Gerenciamento de catálogo</footer>
+    <footer>Estante Viva — Gerenciamento de catálogo</footer>
+
+
+
+
+        
 </body>
 </html>
