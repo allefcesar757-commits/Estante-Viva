@@ -1,187 +1,157 @@
-body{
-        font-family: 'Open Sans', sans-serif;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 
-        }
-         nav{
-            border: 2px solid;
-            padding: 0 0 0 30px;
-            display: flex;
-            align-items: center;
-            background-color: #EEEEEE;
-    
-        }
+nav {
+    border: 2px solid;
+    padding: 0 0 0 80px;
+    display: flex;
+    align-items: center;
+    background-color: #00d1c0;
+}
 
-        nav h2{
-            font-size: 25px;
-        }
+nav h2 {
+    font-size: 25px;
+}
 
+.inicio {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 30px;
+}
 
-        .inicio{
-        gap: 10px;
-        margin-left: 1500px;
-        }
+nav a, p {
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+}
 
-        nav a, p{
-            color: black;
-            text-decoration: none;
-        }
+h1 {
+    padding: 0 0 0 40px;
+}
 
-        h1{
-            padding: 0 0 0 30px;
-        }
-
-        /*Painel de cadastro*/
-        form{
-            border: 2px solid;
-
-            height: 260px;
-            margin: 0 40px;
-            padding: 0 40px;
-        }
-
-        .primeiro-cadastro{
-            display: grid;
-
-            grid-template-columns: 1.5fr 0.8fr;
-
-            gap: 24px;
-
-            margin-top: 16px;
-        }
-
-        .segundo-cadastro{
-            display: grid;
-
-            grid-template-columns: 1fr 1fr 1fr;
-
-            gap: 24px;
-
-            margin-top: 20px;
-
-            align-items: end;
-
-        }
-
-        .campo {
-             display: flex;
-            flex-direction: column;
-            gap: 5px;
-            }
-
-        input{
-                border: 2px solid;
-                height: 30px;
-            }
-
-        .titulo-cadastro{
-                height: 30px;
-            }
-
-        .cadastrar-button{
-                cursor: pointer;
-                height: 35px;
-                border: 2px solid;
-            }
-        
-        input::placeholder{
-            color: #4d504f;
-        }
-
-        main{
-            padding: 0 40px;
-        }
-
-        h4{
-            font-size: 20px;
-            padding: 0 40px;
-        }
-
-        .buscar {
-            margin-left: 40px;
-
-            width: 1455px;
-            height: 35px;
-        }
-
-        .barra-pesquisa{
-            display: grid;
-
-            grid-template-columns: 1.5fr 1fr 1fr;
-
-            margin-top: -15px;
-        }
-
-        .button-pesquisa{
-            display: flex;
-        }
-
-        .pesquisar{
-            cursor: pointer;
+/* Painel de cadastro */
+form {
+    border: 2px solid;
+    min-height: 240px;
+    margin: 0 40px;
+    padding: 20px 20px;
+}
 
 
-            border: 2px solid;
+.primeiro-cadastro {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 24px;
+    margin-top: 16px;
+}
 
+.segundo-cadastro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 20px;
+    align-items: end;
+}
 
-            padding: 0 70px 0 0 ;
-            width: 140px;
-            height: 40px;
-            margin-left: 10px;
-        }
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
-         .limpar{
-            cursor: pointer;
+input {
+    border: 2px solid;
+    height: 35px;
+    padding: 0 10px;
+}
 
+.cadastrar-button {
+    cursor: pointer;
+    height: 35px;
+    border: 2px solid;
+    font-weight: bold;
+}
 
-            border: 2px solid;
+input::placeholder {
+    color: #030303;
+}
 
+main {
+    flex: 1;
+    padding: 0 40px;
+}
 
-            padding: 0 70px 0 0 ;
-            width: 140px;
-            height: 40px;
-            margin-left: 10px;
-        }
+h3 {
+    margin: 0;
+}
+h4 {
+    font-size: 20px;
+    padding: 0 40px;
+    margin-bottom: 15px;
+}
 
+.barra-pesquisa {
+    display: flex;
+    gap: 10px;
+    margin: 0 40px;
+}
 
-        table{
-        margin-top: 20px;
-        margin-left: 40px;
+.buscar {
+    flex: 1;
+    height: 40px;
+}
 
-        width: 1765px;
-        border-collapse: collapse;
-        border: 1px solid #888;
-        }
+.button-pesquisa {
+    display: flex;
+    gap: 10px;
+}
 
-        th{
-        background-color: #EEEEEE;
-        color: black;
+.pesquisar, .limpar {
+    cursor: pointer;
+    border: 2px solid;
+    width: 140px;
+    height: 40px;
+    text-align: left;
+    padding-left: 12px;
+}
 
-        padding: 10px;
-        text-align: left;
-        font-weight: bold;
-    
-        }
+table {
+    margin: 20px 40px 0 40px;
+    width: calc(100% - 80px);
+    border-collapse: collapse;
+    border: 1px solid #ebebf3;
+}
 
-        td{
-        padding: 10px;
-        border-top: 1px solid #888;
-        font-size: 13px;
-        }
+th {
+    background-color: #fbfdff;
+    color: rgb(18, 19, 18);
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
 
-        .edit{
-            cursor: pointer;
-            padding: 10px 40px 8px 10px;
-        }
+td {
+    padding: 10px;
+    border-top: 1px solid #faf1f1;
+    font-size: 13px;
+}
 
-        footer{
-           
-        
-            text-align: center;
+.edit {
+    cursor: pointer;
+    padding: 8px 20px;
+    margin-right: 5px;
+}
 
-            border: 2px solid;
+footer {
+    text-align: center;
+    border: 2px solid;
+    background-color: #d1dfe2;
+    padding: 10px;
+}
 
-            background-color: #EEEEEE;
-
-        }
